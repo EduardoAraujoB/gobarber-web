@@ -33,7 +33,8 @@
     "react-hooks/exhaustive-deps": "warn",
     "react/jsx-props-no-spreading": "off",
     "no-underscore-dangle": "off",
-    "prefer-object-spread": "off"
+    "prefer-object-spread": "off",
+    "camelcase": "off"
   },
   "settings": {
     "import/resolver": {
