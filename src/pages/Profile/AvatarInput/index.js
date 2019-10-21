@@ -5,7 +5,7 @@ import api from '~/services/api';
 import { Container } from './styles';
 
 export default function AvatarInput() {
-  const { defaultValue, registerField } = useField('avatar');
+  const { fieldName, registerField, defaultValue } = useField('avatar');
 
   const [file, setFile] = useState(defaultValue && defaultValue.id);
   const [preview, setPreview] = useState(defaultValue && defaultValue.url);
@@ -20,7 +20,8 @@ export default function AvatarInput() {
         data: 'dataset.file',
       });
     }
-  }, [ref, registerField]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [ref.current, fieldName]);
 
   async function handleChange(e) {
     const data = new FormData();
