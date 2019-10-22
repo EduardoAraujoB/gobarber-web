@@ -15,7 +15,7 @@ export default function AvatarInput() {
   useEffect(() => {
     if (ref.current) {
       registerField({
-        name: 'avatar_id',
+        name: fieldName,
         ref: ref.current,
         data: 'dataset.file',
       });
@@ -38,7 +38,7 @@ export default function AvatarInput() {
 
   return (
     <Container>
-      <label htmlFor="avatar">
+      <label htmlFor={fieldName}>
         <img
           src={
             preview || 'https://api.adorable.io/avatars/50/abott@adorable.png'
