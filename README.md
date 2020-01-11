@@ -9,7 +9,6 @@
 <ul>
   <li>React</li>
   <li>Unform</li>
-  <li>React Navigation</li>
   <li>Reactotron</li>
   <li>Redux</li>
   <li>Redux Saga</li>
