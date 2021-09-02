@@ -11,7 +11,7 @@
     "eslint-config-prettier": "^6.4.0",
     "eslint-plugin-prettier": "^3.1.1",
     "history": "^4.10.1",
-    "immer": "^4.0.1",
+    "immer": "^9.0.6",
     "polished": "^3.4.1",
     "prettier": "^1.18.2",
     "prop-types": "^15.7.2",
